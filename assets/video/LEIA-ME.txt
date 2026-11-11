@@ -1,0 +1,13 @@
+VÍDEOS DO SITE
+==============
+Salve aqui os dois vídeos do Instagram, exatamente com estes nomes:
+
+  video-1.mp4  → https://www.instagram.com/p/Da2qvC9xoqK/
+  video-2.mp4  → https://www.instagram.com/p/Dbc_etHOeBN/
+
+Recomendado: MP4 (H.264 + AAC), vertical 1080x1920 ou 720x1280, até ~8 MB cada.
+Para comprimir (opcional):
+  ffmpeg -i original.mp4 -vf "scale=720:-2" -c:v libx264 -preset veryfast -crf 26 -c:a aac -b:a 96k -movflags +faststart video-1.mp4
+
+Enquanto os arquivos não estiverem aqui, o site carrega automaticamente o
+vídeo incorporado do próprio Instagram quando o visitante clica em "Assistir".
